@@ -6,10 +6,8 @@ metadata:
 spec:
   selector:
     app: flux-cluster-app
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30080
   type: NodePort
-  
+  ports:
+    - port: 80
+      targetPort: 5000   # this must match the container's exposed port
+      nodePort: 30080
