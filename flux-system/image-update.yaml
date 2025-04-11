@@ -9,6 +9,8 @@ spec:
   sourceRef:
     kind: GitRepository
     name: app-repo
+  secretRef:                # ✅ Proper location
+    name: flux-git-auth
   git:
     checkout:
       ref:
