@@ -17,4 +17,4 @@ spec:
       branch: main
   update:
     strategy: Setters
-    path: ./manifests
+    path: manifests
