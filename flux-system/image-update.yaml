@@ -9,6 +9,8 @@ spec:
   sourceRef:
     kind: GitRepository
     name: app-repo
+  secretRef:
+    name: flux-git-auth
   git:
     checkout:
       ref:
@@ -19,5 +21,6 @@ spec:
         email: eshwar3240@gmail.com
     push:
       branch: main
+      
   update:
     strategy: Setters
