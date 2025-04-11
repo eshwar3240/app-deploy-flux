@@ -5,5 +5,5 @@ metadata:
   name: app-image
   namespace: flux-system
 spec:
-  image: eshwar0117/flux-cluster:1.0.0   # {"$imagepolicy": "flux-system:app-policy"}
+  image: eshwar0117/flux-cluster  
   interval: 1m
