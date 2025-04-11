@@ -17,9 +17,7 @@ spec:
         name: fluxcdbot
         email: eshwar@gmail.com
     push:
-      branch: main
-      secretRef:
-        name: flux-git-auth  # <-- Move secretRef here!
+      branch: main # <-- Move secretRef here!
   update:
     strategy: Setters
     path: manifests
