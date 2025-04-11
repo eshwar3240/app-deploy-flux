@@ -9,14 +9,17 @@ spec:
     kind: GitRepository
     name: app-repo
   git:
+    checkout:
+      ref:
+        branch: main
     commit:
       author:
-        email: eshwar@gmail.com
         name: fluxcdbot
+        email: eshwar@gmail.com
     push:
       branch: main
+      secretRef:
+        name: flux-git-auth  # <-- Move secretRef here!
   update:
     strategy: Setters
     path: manifests
-  secretRef:
-    name: flux-git-auth
