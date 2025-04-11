@@ -6,7 +6,9 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  path: ./manifests  # path inside app-deploy-repo
+  path: ./manifests
+  resources:
+    - deployment.yaml  # path inside app-deploy-repo
   prune: true
   sourceRef:
     kind: GitRepository
