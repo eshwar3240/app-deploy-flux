@@ -1,7 +1,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageUpdateAutomation
 metadata:
-  name: app-repo
+  name: app-es
   namespace: flux-system
 spec:
   interval: 1m
@@ -17,7 +17,7 @@ spec:
       branch: main
   sourceRef:
     kind: GitRepository
-    name: app-repo
+    name: app-es
   update:
     strategy: Setters
     path: manifests

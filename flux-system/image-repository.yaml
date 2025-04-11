@@ -2,7 +2,7 @@
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageRepository
 metadata:
-  name: app-image
+  name: app-es
   namespace: flux-system
 spec:
   image: eshwar0117/flux-cluster  

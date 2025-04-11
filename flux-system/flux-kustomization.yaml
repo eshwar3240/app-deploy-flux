@@ -10,5 +10,5 @@ spec:
   prune: true
   sourceRef:
     kind: GitRepository
-    name: app-repo
+    name: app-es
   targetNamespace: default
