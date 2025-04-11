@@ -17,7 +17,7 @@ spec:
       author:
         name: flux-bot
         email: eshwar3240@gmail.com
-      messageTemplate: "Update image to {{ .Image.URL }}"
+      messageTemplate: "Update image to {{ .Update.ImageID }}" 
     push:
       branch: main
   update:
