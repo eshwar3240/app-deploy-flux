@@ -1,8 +1,7 @@
-# image-update.yaml
 apiVersion: image.toolkit.fluxcd.io/v1beta2
 kind: ImageUpdateAutomation
 metadata:
-  name: app-auto
+  name: app-repo
   namespace: flux-system
 spec:
   interval: 1m
@@ -10,15 +9,12 @@ spec:
     kind: GitRepository
     name: app-repo
   git:
-    checkout:
-      ref:
-        branch: main
-    commit:
+      commit:
       author:
-        name: flux-bot
-        email: eshwar3240@gmail.com
+        email: fluxcdbot@users.noreply.github.com
+        name: fluxcdbot
     push:
       branch: main
   update:
-    strategy: Setters       
+    strategy: Setters
     path: ./manifests
