@@ -6,6 +6,6 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  url: https://github.com/YOUR-USERNAME/app-deploy-repo
+  url: https://github.com/eshwar3240/app-deploy-repo
   ref:
     branch: main
