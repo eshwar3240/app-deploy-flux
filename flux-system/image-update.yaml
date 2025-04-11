@@ -9,8 +9,6 @@ spec:
   sourceRef:
     kind: GitRepository
     name: app-repo
-  secretRef:
-    name: flux-git-auth
   git:
     checkout:
       ref:
@@ -22,7 +20,7 @@ spec:
     push:
       branch: main
     secretRef:
-      name: flux-git-auth      
+      name: flux-git-auth    
   update:
-    strategy: Setters
+    strategy: Setters       
     path: ./manifests
