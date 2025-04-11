@@ -25,3 +25,4 @@ spec:
       name: flux-git-auth      
   update:
     strategy: Setters
+    path: ./manifests
