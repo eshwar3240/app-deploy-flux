@@ -8,6 +8,7 @@ spec:
     app: flux-cluster-app
   ports:
     - protocol: TCP
-      port: 80         # Port your service exposes
-      targetPort: 80   # Port your container listens on
-  type: ClusterIP      # Use LoadBalancer if you want external access
+      port: 80
+      targetPort: 80
+      nodePort: 30080
+  type: NodePort
