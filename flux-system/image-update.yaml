@@ -11,10 +11,12 @@ spec:
   git:
     commit:
       author:
-        email: fluxcdbot@users.noreply.github.com
+        email: eshwar@gmail.com
         name: fluxcdbot
     push:
       branch: main
   update:
     strategy: Setters
     path: manifests
+  secretRef:
+    name: flux-git-auth
