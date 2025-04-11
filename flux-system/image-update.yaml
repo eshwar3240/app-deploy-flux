@@ -19,4 +19,4 @@ spec:
     strategy: Setters
     path: manifests
   secretRef:
-    name: flux-git-auth
+    name: flux-git
