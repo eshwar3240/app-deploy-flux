@@ -8,7 +8,7 @@ spec:
   checkout:
     branch: main
     gitRepositoryRef:
-      name:app-repo
+      name: app-repo
     commit:
       author:
         name: fluxcdbot
