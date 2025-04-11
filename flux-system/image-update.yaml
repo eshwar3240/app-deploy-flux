@@ -5,16 +5,19 @@ metadata:
   namespace: flux-system
 spec:
   interval: 1m
-  checkout:
-    branch: main
-    gitRepositoryRef:
-      name: app-repo
+  git:
+    checkout:
+      ref:
+        branch: main
     commit:
       author:
         name: fluxcdbot
         email: eshwar@gmail.com
     push:
-      branch: main # <-- Move secretRef here!
+      branch: main
+  sourceRef:
+    kind: GitRepository
+    name: app-repo
   update:
     strategy: Setters
     path: manifests
