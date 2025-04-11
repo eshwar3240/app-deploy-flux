@@ -1,0 +1,9 @@
+# image-repository.yaml
+apiVersion: image.toolkit.fluxcd.io/v1
+kind: ImageRepository
+metadata:
+  name: app-image
+  namespace: flux-system
+spec:
+  image: docker.io/YOUR-DOCKER-HUB-USERNAME/app
+  interval: 1m

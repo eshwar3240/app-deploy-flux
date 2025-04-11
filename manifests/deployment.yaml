@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flux-cluster-app
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flux-cluster-app
+  template:
+    metadata:
+      labels:
+        app: flux-cluster-app
+    spec:
+      containers:
+        - name: app
+          image: eshwar0117/flux-cluster:latest # This will be patched by automation
+          ports:
+            - containerPort: 80
