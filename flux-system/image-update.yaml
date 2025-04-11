@@ -21,6 +21,7 @@ spec:
         email: eshwar3240@gmail.com
     push:
       branch: main
-      
+    secretRef:
+      name: flux-git-auth      
   update:
     strategy: Setters
