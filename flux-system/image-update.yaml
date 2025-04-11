@@ -19,6 +19,9 @@ spec:
         email: eshwar3240@gmail.com
     push:
       branch: main
+    signingKey:
+        secretRef:
+          name: flux-git-auth
   update:
     strategy: Setters       
     path: ./manifests
