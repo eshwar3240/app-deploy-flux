@@ -16,7 +16,7 @@ spec:
     commit:
       author:
         name: flux-bot
-        email: flux@example.com
+        email: eshwar3240@gmail.com
       messageTemplate: "Update image to {{ .Image.URL }}"
     push:
       branch: main
