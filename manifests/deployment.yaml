@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: eshwar0117/flux-cluster:1.0.0 # {"$imagepolicy": "flux-system:app-policy"}
+          image: eshwar0117/flux-cluster:1.0.0    # {"$imagepolicy": "flux-system:app-policy"}
           ports:
             - containerPort: 80
+            
