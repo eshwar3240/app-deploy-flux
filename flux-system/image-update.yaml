@@ -17,7 +17,7 @@ spec:
       author:
         name: flux-bot
         email: eshwar3240@gmail.com
-      messageTemplate: "Update image to {{ .Update.ImageID }}" 
+      messageTemplate: "Update from ImageUpdateAutomation '{{ .AutomationObject.name }}' at {{ .Timestamp }}"
     push:
       branch: main
   update:
